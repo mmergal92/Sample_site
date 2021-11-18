@@ -11,7 +11,7 @@ body{
     font-size: small;
     text-align: center;
     padding: 5px;
-    min-width: 1080px;
+    min-width: 100%;
 }
 h4{
     font-family: oswald, sans-serif;
@@ -155,8 +155,37 @@ a:link{
     }
 } */
 @media screen and (max-width: 600px){
-    .responsive{
-        padding: 0px 20px;
+    .panel{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 2px;
+    }
+    .left-image{
+        border-right: 0px solid;        
+        padding-left: 0px;
+        height: 50%;
+    }
+    .left-image img{
+        width: 100%;
+        height: auto;
+        vertical-align: center;
+        align-items: center;
+        text-align: center;
+    }
+    .right-text{
+        align-items: baseline;
+        vertical-align: text-bottom;
+        text-align: center;
+        padding-right: 5px;
+    }
+    .button{
+        margin: 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+    p {
+        padding-left: 5px;
     }
 }
 .footer{
